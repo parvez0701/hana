@@ -346,7 +346,7 @@ namespace Rtl
         if(dynamic_cast<const Integer*>(expr) || dynamic_cast<const Time*>(
                     expr)) 
         {
-            if(range->getLExpr()->evaluate() > 31 || range->getRExpr() < 0){
+            if(range->getLExpr()->evaluate() > 31 || range->getRExpr()->evaluate() < 0){
                 return 1;
             }
             return 0;

@@ -716,7 +716,7 @@ namespace stview
             SyMsgHandler::instance()->print(302, 
                 this->getCell()->getName().c_str(),
                 this->getCell()->getSpecialPort("DATAIN")->getIxName().getName().c_str(),
-                log2, outsize);
+                lg2, outsize);
             return false;
         }    
 
@@ -767,7 +767,7 @@ namespace stview
             SyMsgHandler::instance()->print(302, 
                 this->getCell()->getName().c_str(),
                 this->getCell()->getSpecialPort("DATAOUT")->getIxName().getName().c_str(),
-                log2, insize);
+                lg2, insize);
             return false;
         }    
 
