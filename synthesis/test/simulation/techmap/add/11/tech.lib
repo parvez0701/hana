@@ -1,0 +1,93 @@
+Library: 	GenericLib
+Author:		Parvez Ahmad
+Version:	1.0
+
+
+Cell	TECH_ADD1 {
+	pin:		INPUT	 in1;
+	pin:		INPUT	 in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 out;
+	function:	ADD;
+	area:		3.0;
+	delay:		3.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+Cell	TECH_ADD2 {
+	pin:		INPUT	 [1:0] in1;
+	pin:		INPUT	 [1:0] in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 [1:0] out;
+	function:	ADD;
+	area:		5.0;
+	delay:		5.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+
+Cell	TECH_ADD4 {
+	pin:		INPUT	 [3:0] in1;
+	pin:		INPUT	 [3:0] in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 [3:0] out;
+	function:	ADD;
+	area:		9.0;
+	delay:		9.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+
+Cell	TECH_ADD8 {
+	pin:		INPUT	 [7:0] in1;
+	pin:		INPUT	 [7:0] in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 [7:0] out;
+	function:	ADD;
+	area:		17.0;
+	delay:		17.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+Cell	TECH_ADD16 {
+	pin:		INPUT	 [15:0] in1;
+	pin:		INPUT	 [15:0] in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 [15:0] out;
+	function:	ADD;
+	area:		33.0;
+	delay:		33.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+Cell	TECH_ADD32 {
+	pin:		INPUT	 [31:0] in1;
+	pin:		INPUT	 [31:0] in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 [31:0] out;
+	function:	ADD;
+	area:		65.0;
+	delay:		65.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+
+Cell	TECH_ADD64 {
+	pin:		INPUT	 [63:0] in1;
+	pin:		INPUT	 [63:0] in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 [63:0] out;
+	function:	ADD;
+	area:		129.0;
+	delay:		129.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+

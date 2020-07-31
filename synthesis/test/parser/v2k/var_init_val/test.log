@@ -1,0 +1,6 @@
+[PARSE_INFO 1]: Reading design file test.v .....
+[PARSE_INFO 2]: Analyzing module ADD1 .....
+[STX_ERROR 50]: Line 2, syntax error.
+[STX_ERROR 50]: Line 3, syntax error.
+[PARSE_INFO 3]: Done reading source file test.v. 
+[PARSE_INFO 7]: Please correct above errors.

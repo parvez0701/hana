@@ -1,0 +1,132 @@
+Library: 	GenericLib
+Author:		Parvez Ahmad
+Version:	1.0
+
+
+Cell	TECH_XOR2 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[1:0] in;
+	function:	XOR;
+	area:		2.0;
+	delay:		2.0;
+}
+
+Cell	TECH_XOR3 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[2:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XOR4 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[3:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XOR5 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[4:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XOR6 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[5:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XOR7 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[6:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XOR8 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[7:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XOR9 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[8:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XOR10 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[9:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XOR11 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[10:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XOR12 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[11:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XOR13 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[12:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XOR14 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[13:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XOR15 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[14:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XOR16 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[15:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XOR17 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[16:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XOR18 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[17:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XOR19 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[18:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}

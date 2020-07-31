@@ -1,0 +1,17 @@
+Library: 	GenericLib
+Author:		Parvez Ahmad
+Version:	1.0
+
+Cell	TECH_RSFF {
+	pin:		INPUT	 d;
+	pin:		INPUT	 clk;
+	pin:		INPUT	 reset;
+	pin:		INPUT	 set;
+	pin:		OUTPUT	 q;
+	function:	RSFF;
+	area:		4.0;
+	delay:		4.0;
+	attribute:	(clk, CLOCK, 1);
+	attribute:	(reset, RESET, 1);
+	attribute:	(set, SET, 0);
+}	

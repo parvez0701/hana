@@ -1,0 +1,34 @@
+Library: 	GenericLib
+Author:		Parvez Ahmad
+Version:	1.0
+
+
+Cell	TECH_NOR2 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[1:0] in;
+	function:	NOR;
+	area:		2.0;
+	delay:		2.0;
+}
+
+Cell	TECH_NOR3 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[2:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NOR4 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[3:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NOR5 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[4:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}

@@ -1,0 +1,132 @@
+Library: 	GenericLib
+Author:		Parvez Ahmad
+Version:	1.0
+
+
+Cell	TECH_AND2 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[1:0] in;
+	function:	AND;
+	area:		2.0;
+	delay:		2.0;
+}
+
+Cell	TECH_AND3 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[2:0] in;
+	function:	AND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_AND4 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[3:0] in;
+	function:	AND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_AND5 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[4:0] in;
+	function:	AND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_AND6 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[5:0] in;
+	function:	AND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_AND7 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[6:0] in;
+	function:	AND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_AND8 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[7:0] in;
+	function:	AND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_AND9 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[8:0] in;
+	function:	AND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_AND10 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[9:0] in;
+	function:	AND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_AND11 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[10:0] in;
+	function:	AND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_AND12 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[11:0] in;
+	function:	AND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_AND13 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[12:0] in;
+	function:	AND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_AND14 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[13:0] in;
+	function:	AND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_AND15 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[14:0] in;
+	function:	AND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_AND16 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[15:0] in;
+	function:	AND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_AND17 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[16:0] in;
+	function:	AND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_AND18 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[17:0] in;
+	function:	AND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_AND19 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[18:0] in;
+	function:	AND;
+	area:		3.0;
+	delay:		3.0;
+}

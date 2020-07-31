@@ -1,0 +1,34 @@
+
+Architecture of the regression suite:
+
+	Objectives:
+		1. Suite should be flexible. We should be able to run
+			any subset of regression testcases.
+		2. Suite should be customizable. We should be able to add
+		3. testcases with varying options passed to the tool.
+
+	Details:
+		1. Suite based on Makefile and Perl.
+		2. There will be one perl script which runs the tool and
+			and does diff with golden output.
+		3. Tree like structure of the suite.
+		4. Every directory to have a Makefile. All but leaf level
+			Makefiles will simply call make in sub-directories.
+		5. Leaf level Makefile will actually call the perl script.
+		6. Every leaf level directory will have a file named 
+			.references. This file will contain name of the output files
+			against the golden ones. Also this file will contain tool
+			command options.
+			Example:
+				EXE=bulah
+				OPTIONS= test.v -d test_dec.v
+				FILES=test_gold.v test_dec.v
+		7. To run regression from any lower directory, you need to set
+			enviorenment variable REGSCRIPT to point to regression.pl
+			script.
+		8. Add exe path in your search path.
+		9. Restrictions mentioned 7 & 8 to be removed.
+		10. Testcases can be update using make update command. This
+			however does not check them in into the CVS. This option
+			is provided only in the leaf level Makefiles.
+

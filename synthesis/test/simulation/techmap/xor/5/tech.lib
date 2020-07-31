@@ -1,0 +1,34 @@
+Library: 	GenericLib
+Author:		Parvez Ahmad
+Version:	1.0
+
+
+Cell	TECH_XOR2 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[1:0] in;
+	function:	XOR;
+	area:		2.0;
+	delay:		2.0;
+}
+
+Cell	TECH_XOR3 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[2:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XOR4 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[3:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XOR5 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[4:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}

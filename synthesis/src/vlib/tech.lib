@@ -1,0 +1,1094 @@
+Library: 	GenericLib
+Author:		Parvez Ahmad
+Version:	1.0
+
+Cell	TECH_BUF {
+	pin:		OUTPUT	out;
+	pin:		INPUT	in;
+	function:	BUF;
+	area:		1.0;
+	delay:		1.0;
+}
+
+Cell	TECH_TRIBUF {
+	pin:		OUTPUT	out;
+	pin:		INPUT	in;
+	pin:		INPUT	enable;
+	function:	TRIBUF;
+	area:		2.0;
+	delay:		1.0;
+	attribute:	(enable, ENABLE, 1);
+}
+Cell	TECH_INV {
+	pin:		OUTPUT	out;
+	pin:		INPUT	in;
+	function:	NOT;
+	area:		1.0;
+	delay:		1.0;
+}
+
+Cell	TECH_AND2 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[1:0] in;
+	function:	AND;
+	area:		2.0;
+	delay:		2.0;
+}
+
+Cell	TECH_AND3 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[2:0] in;
+	function:	AND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_AND4 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[3:0] in;
+	function:	AND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_OR2 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[1:0] in;
+	function:	OR;
+	area:		2.0;
+	delay:		2.0;
+}
+
+Cell	TECH_OR3 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[2:0] in;
+	function:	OR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_OR4 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[3:0] in;
+	function:	OR;
+	area:		4.0;
+	delay:		4.0;
+}	
+Cell	TECH_NAND2 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[1:0] in;
+	function:	NAND;
+	area:		2.0;
+	delay:		2.0;
+}
+
+Cell	TECH_NAND3 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[2:0] in;
+	function:	NAND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NAND4 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[3:0] in;
+	function:	NAND;
+	area:		4.0;
+	delay:		4.0;
+}
+Cell	TECH_NOR2 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[1:0] in;
+	function:	NOR;
+	area:		2.0;
+	delay:		2.0;
+}
+
+Cell	TECH_NOR3 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[2:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NOR4 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[3:0] in;
+	function:	NOR;
+	area:		4.0;
+	delay:		4.0;
+}	
+
+Cell	TECH_XOR2 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[1:0] in;
+	function:	XOR;
+	area:		2.0;
+	delay:		2.0;
+}
+
+Cell	TECH_XOR3 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[2:0] in;
+	function:	XOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XOR4 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[3:0] in;
+	function:	XOR;
+	area:		4.0;
+	delay:		4.0;
+}	
+Cell	TECH_XNOR2 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[1:0] in;
+	function:	XNOR;
+	area:		2.0;
+	delay:		2.0;
+}
+
+Cell	TECH_XNOR3 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[2:0] in;
+	function:	XNOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_XNOR4 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[3:0] in;
+	function:	XNOR;
+	area:		4.0;
+	delay:		4.0;
+}
+
+Cell	TECH_ENC2 {
+	pin:		INPUT	[1:0] in;
+	pin:		OUTPUT	out;
+	pin:		INPUT	enable;
+	function:	ENC;
+	area:		3.0;
+	delay:		3.0;
+	attribute:	(enable, ENABLE, 1);
+}
+Cell	TECH_ENC4 {
+	pin:		INPUT	[3:0] in;
+	pin:		OUTPUT	[1:0] out;
+	pin:		INPUT	enable;
+	function:	ENC;
+	area:		5.0;
+	delay:		5.0;
+	attribute:	(enable, ENABLE, 1);
+}
+Cell	TECH_ENC8 {
+	pin:		INPUT	[7:0] in;
+	pin:		OUTPUT	[2:0] out;
+	pin:		INPUT	enable;
+	function:	ENC;
+	area:		9.0;
+	delay:		9.0;
+	attribute:	(enable, ENABLE, 1);
+}
+Cell	TECH_ENC16 {
+	pin:		INPUT	[15:0] in;
+	pin:		OUTPUT	[3:0] out;
+	pin:		INPUT	enable;
+	function:	ENC;
+	area:		17.0;
+	delay:		17.0;
+	attribute:	(enable, ENABLE, 1);
+}
+Cell	TECH_ENC32 {
+	pin:		INPUT	[31:0] in;
+	pin:		OUTPUT	[4:0] out;
+	pin:		INPUT	enable;
+	function:	ENC;
+	area:		33.0;
+	delay:		33.0;
+	attribute:	(enable, ENABLE, 1);
+}
+Cell	TECH_ENC64 {
+	pin:		INPUT	[63:0] in;
+	pin:		OUTPUT	[5:0] out;
+	pin:		INPUT	enable;
+	function:	ENC;
+	area:		65.0;
+	delay:		65.0;
+	attribute:	(enable, ENABLE, 1);
+}
+
+Cell	TECH_DEC1 {
+	pin:		INPUT		in;
+	pin:		OUTPUT	[1:0] out;
+	pin:		INPUT	enable;
+	function:	DEC;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(enable, ENABLE, 1);
+}
+Cell	TECH_DEC2 {
+	pin:		INPUT	[1:0] in;
+	pin:		OUTPUT	[3:0] out;
+	pin:		INPUT	enable;
+	function:	DEC;
+	area:		3.0;
+	delay:		1.0;
+	attribute:	(enable, ENABLE, 1);
+}
+Cell	TECH_DEC3 {
+	pin:		INPUT	[2:0] in;
+	pin:		OUTPUT	[7:0] out;
+	pin:		INPUT	enable;
+	function:	DEC;
+	area:		4.0;
+	delay:		4.0;
+	attribute:	(enable, ENABLE, 1);
+}
+Cell	TECH_DEC4 {
+	pin:		INPUT	[3:0] in;
+	pin:		OUTPUT	[15:0] out;
+	pin:		INPUT	enable;
+	function:	DEC;
+	area:		5.0;
+	delay:		5.0;
+	attribute:	(enable, ENABLE, 1);
+}
+Cell	TECH_DEC5 {
+	pin:		INPUT	[4:0] in;
+	pin:		OUTPUT	[31:0] out;
+	pin:		INPUT	enable;
+	function:	DEC;
+	area:		6.0;
+	delay:		6.0;
+	attribute:	(enable, ENABLE, 1);
+}
+
+Cell	TECH_DEC6 {
+	pin:		INPUT	[5:0] in;
+	pin:		OUTPUT	[63:0] out;
+	pin:		INPUT	enable;
+	function:	DEC;
+	area:		7.0;
+	delay:		7.0;
+	attribute:	(enable, ENABLE, 1);
+}
+Cell	TECH_MUX2 {
+	pin:		INPUT	[1:0] in;
+	pin:		OUTPUT	 out;
+	pin:		INPUT	select;
+	function:	MUX;
+	area:		3.0;
+	delay:		3.0;
+	attribute:	(select, SELECT, 1);
+}
+Cell	TECH_MUX4 {
+	pin:		INPUT	[3:0] in;
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[1:0] select;
+	function:	MUX;
+	area:		6.0;
+	delay:		6.0;
+	attribute:	(select, SELECT, 1);
+}
+
+Cell	TECH_MUX8 {
+	pin:		INPUT	[7:0] in;
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[2:0] select;
+	function:	MUX;
+	area:		11.0;
+	delay:		11.0;
+	attribute:	(select, SELECT, 1);
+}
+Cell	TECH_MUX16 {
+	pin:		INPUT	[15:0] in;
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[3:0] select;
+	function:	MUX;
+	area:		20.0;
+	delay:		20.0;
+	attribute:	(select, SELECT, 1);
+}
+
+Cell	TECH_MUX32 {
+	pin:		INPUT	[31:0] in;
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[4:0] select;
+	function:	MUX;
+	area:		37.0;
+	delay:		37.0;
+	attribute:	(select, SELECT, 1);
+}
+
+Cell	TECH_MUX64 {
+	pin:		INPUT	[63:0] in;
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[5:0] select;
+	function:	MUX;
+	area:		70.0;
+	delay:		70.0;
+	attribute:	(select, SELECT, 1);
+}
+
+Cell	TECH_ADD1 {
+	pin:		INPUT	 in1;
+	pin:		INPUT	 in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 out;
+	function:	ADD;
+	area:		3.0;
+	delay:		3.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+Cell	TECH_ADD2 {
+	pin:		INPUT	 [1:0] in1;
+	pin:		INPUT	 [1:0] in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 [1:0] out;
+	function:	ADD;
+	area:		5.0;
+	delay:		5.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+
+Cell	TECH_ADD4 {
+	pin:		INPUT	 [3:0] in1;
+	pin:		INPUT	 [3:0] in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 [3:0] out;
+	function:	ADD;
+	area:		9.0;
+	delay:		9.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+
+Cell	TECH_ADD8 {
+	pin:		INPUT	 [7:0] in1;
+	pin:		INPUT	 [7:0] in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 [7:0] out;
+	function:	ADD;
+	area:		17.0;
+	delay:		17.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+Cell	TECH_ADD16 {
+	pin:		INPUT	 [15:0] in1;
+	pin:		INPUT	 [15:0] in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 [15:0] out;
+	function:	ADD;
+	area:		33.0;
+	delay:		33.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+Cell	TECH_ADD32 {
+	pin:		INPUT	 [31:0] in1;
+	pin:		INPUT	 [31:0] in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 [31:0] out;
+	function:	ADD;
+	area:		65.0;
+	delay:		65.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+
+Cell	TECH_ADD64 {
+	pin:		INPUT	 [63:0] in1;
+	pin:		INPUT	 [63:0] in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 [63:0] out;
+	function:	ADD;
+	area:		129.0;
+	delay:		129.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+
+Cell	TECH_SUB1 {
+	pin:		INPUT	 in1;
+	pin:		INPUT	 in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 out;
+	function:	SUB;
+	area:		3.0;
+	delay:		3.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+Cell	TECH_SUB2 {
+	pin:		INPUT	 [1:0] in1;
+	pin:		INPUT	 [1:0] in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 [1:0] out;
+	function:	SUB;
+	area:		5.0;
+	delay:		5.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+
+Cell	TECH_SUB4 {
+	pin:		INPUT	 [3:0] in1;
+	pin:		INPUT	 [3:0] in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 [3:0] out;
+	function:	SUB;
+	area:		9.0;
+	delay:		9.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+
+Cell	TECH_SUB8 {
+	pin:		INPUT	 [7:0] in1;
+	pin:		INPUT	 [7:0] in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 [7:0] out;
+	function:	SUB;
+	area:		17.0;
+	delay:		17.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+Cell	TECH_SUB16 {
+	pin:		INPUT	 [15:0] in1;
+	pin:		INPUT	 [15:0] in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 [15:0] out;
+	function:	SUB;
+	area:		33.0;
+	delay:		33.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+Cell	TECH_SUB32 {
+	pin:		INPUT	 [31:0] in1;
+	pin:		INPUT	 [31:0] in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 [31:0] out;
+	function:	SUB;
+	area:		33.0;
+	delay:		33.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+
+Cell	TECH_SUB64 {
+	pin:		INPUT	 [63:0] in1;
+	pin:		INPUT	 [63:0] in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 [63:0] out;
+	function:	SUB;
+	area:		129.0;
+	delay:		129.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+
+
+Cell	TECH_MUL1 {
+	pin:		INPUT	 in1;
+	pin:		INPUT	 in2;
+	pin:		OUTPUT [1:0] out;
+	function:	MUL;
+	area:		2.0;
+	delay:		2.0;
+}
+Cell	TECH_MUL2 {
+	pin:		INPUT	 [1:0] in1;
+	pin:		INPUT	 [1:0] in2;
+	pin:		OUTPUT	 [3:0] out;
+	function:	MUL;
+	area:		4.0;
+	delay:		4.0;
+}
+Cell	TECH_MUL4 {
+	pin:		INPUT	 [3:0] in1;
+	pin:		INPUT	 [3:0] in2;
+	pin:		OUTPUT	 [7:0] out;
+	function:	MUL;
+	area:		8.0;
+	delay:		8.0;
+}
+
+Cell	TECH_MUL8 {
+	pin:		INPUT	 [7:0] in1;
+	pin:		INPUT	 [7:0] in2;
+	pin:		OUTPUT	 [15:0] out;
+	function:	MUL;
+	area:		16.0;
+	delay:		16.0;
+}
+
+Cell	TECH_MUL16 {
+	pin:		INPUT	 [15:0] in1;
+	pin:		INPUT	 [15:0] in2;
+	pin:		OUTPUT	 [31:0] out;
+	function:	MUL;
+	area:		32.0;
+	delay:		32.0;
+}
+Cell	TECH_MUL32 {
+	pin:		INPUT	 [31:0] in1;
+	pin:		INPUT	 [31:0] in2;
+	pin:		OUTPUT	 [63:0] out;
+	function:	MUL;
+	area:		32.0;
+	delay:		32.0;
+}
+
+Cell	TECH_MUL64 {
+	pin:		INPUT	 [63:0] in1;
+	pin:		INPUT	 [63:0] in2;
+	pin:		OUTPUT	 [127:0] out;
+	function:	MUL;
+	area:		64.0;
+	delay:		64.0;
+}
+
+Cell	TECH_DIV1 {
+	pin:		INPUT	 in1;
+	pin:		INPUT	 in2;
+	pin:		OUTPUT	 out;
+	pin:		OUTPUT	 rem;
+	function:	DIV;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(in1, divisor, 1);
+	attribute:	(in2, dividend, 1);
+}
+Cell	TECH_DIV2 {
+	pin:		INPUT	 [1:0] in1;
+	pin:		INPUT	 [1:0] in2;
+	pin:		OUTPUT	 [1:0] out;
+	pin:		OUTPUT	 [1:0] rem;
+	function:	DIV;
+	area:		4.0;
+	delay:		4.0;
+	attribute:	(in1, divisor, 1);
+	attribute:	(in2, dividend, 1);
+}
+Cell	TECH_DIV4 {
+	pin:		INPUT	 [3:0] in1;
+	pin:		INPUT	 [3:0] in2;
+	pin:		OUTPUT	 [3:0] out;
+	pin:		OUTPUT	 [3:0] rem;
+	function:	DIV;
+	area:		8.0;
+	delay:		8.0;
+	attribute:	(in1, divisor, 1);
+	attribute:	(in2, dividend, 1);
+}
+
+Cell	TECH_DIV8 {
+	pin:		INPUT	 [7:0] in1;
+	pin:		INPUT	 [7:0] in2;
+	pin:		OUTPUT	 [7:0] out;
+	pin:		OUTPUT	 [7:0] rem;
+	function:	DIV;
+	area:		16.0;
+	delay:		16.0;
+	attribute:	(in1, divisor, 1);
+	attribute:	(in2, dividend, 1);
+}
+
+Cell	TECH_DIV16 {
+	pin:		INPUT	 [15:0] in1;
+	pin:		INPUT	 [15:0] in2;
+	pin:		OUTPUT	 [15:0] out;
+	pin:		OUTPUT	 [15:0] rem;
+	function:	DIV;
+	area:		32.0;
+	delay:		32.0;
+	attribute:	(in1, divisor, 1);
+	attribute:	(in2, dividend, 1);
+}
+Cell	TECH_DIV32 {
+	pin:		INPUT	 [31:0] in1;
+	pin:		INPUT	 [31:0] in2;
+	pin:		OUTPUT	 [31:0] out;
+	pin:		OUTPUT	 [31:0] rem;
+	function:	DIV;
+	area:		64.0;
+	delay:		64.0;
+	attribute:	(in1, divisor, 1);
+	attribute:	(in2, dividend, 1);
+}
+
+Cell	TECH_DIV64 {
+	pin:		INPUT	 [63:0] in1;
+	pin:		INPUT	 [63:0] in2;
+	pin:		OUTPUT	 [63:0] out;
+	pin:		OUTPUT	 [63:0] rem;
+	function:	DIV;
+	area:		128.0;
+	delay:		128.0;
+	attribute:	(in1, divisor, 1);
+	attribute:	(in2, dividend, 1);
+}
+
+Cell	TECH_FF {
+	pin:		INPUT	 d;
+	pin:		INPUT	 clk;
+	pin:		OUTPUT	 q;
+	function:	FF;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(clk, CLOCK, 1);
+}	
+
+Cell	TECH_RFF {
+	pin:		INPUT	 d;
+	pin:		INPUT	 clk;
+	pin:		INPUT	 reset;
+	pin:		OUTPUT	 q;
+	function:	RFF;
+	area:		3.0;
+	delay:		3.0;
+	attribute:	(clk, CLOCK, 1);
+	attribute:	(reset, RESET, 0);
+}	
+
+Cell	TECH_SFF {
+	pin:		INPUT	 d;
+	pin:		INPUT	 clk;
+	pin:		INPUT	 set;
+	pin:		OUTPUT	 q;
+	function:	SFF;
+	area:		3.0;
+	delay:		3.0;
+	attribute:	(clk, CLOCK, 1);
+	attribute:	(set, SET, 0);
+}	
+Cell	TECH_RSFF {
+	pin:		INPUT	 d;
+	pin:		INPUT	 clk;
+	pin:		INPUT	 reset;
+	pin:		INPUT	 set;
+	pin:		OUTPUT	 q;
+	function:	RSFF;
+	area:		4.0;
+	delay:		4.0;
+	attribute:	(clk, CLOCK, 1);
+	attribute:	(reset, RESET, 0);
+	attribute:	(set, SET, 1);
+}	
+
+Cell	TECH_SRFF {
+	pin:		INPUT	 d;
+	pin:		INPUT	 clk;
+	pin:		INPUT	 reset;
+	pin:		INPUT	 set;
+	pin:		OUTPUT	 q;
+	function:	SRFF;
+	area:		4.0;
+	delay:		4.0;
+	attribute:	(clk, CLOCK, 1);
+	attribute:	(reset, RESET, 0);
+	attribute:	(set, SET, 1);
+}	
+Cell	TECH_LATCH {
+	pin:		INPUT	 d;
+	pin:		INPUT	 enable;
+	pin:		OUTPUT	 q;
+	function:	LD;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(enable, ENABLE, 1);
+}	
+Cell	TECH_RLATCH {
+	pin:		INPUT	 d;
+	pin:		INPUT	 enable;
+	pin:		INPUT	 reset;
+	pin:		OUTPUT	 q;
+	function:	RLD;
+	area:		3.0;
+	delay:		3.0;
+	attribute:	(enable, ENABLE, 1);
+	attribute:	(reset, RESET, 0);
+}	
+
+Cell	TECH_LSHIFT1 {
+	pin:		INPUT	in;
+	pin:		INPUT	shift;
+	pin:		OUTPUT	out;
+	pin:		INPUT	val;
+	function:	LSH;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(in, DATAIN, 1);
+	attribute:	(shift, SHIFT, 0);
+	attribute:	(val, SHIFTVAL, 0);
+}	
+Cell	TECH_LSHIFT2 {
+	pin:		INPUT	[1:0]	in;
+	pin:		INPUT	[1:0]	shift;
+	pin:		OUTPUT	[1:0]	out;
+	pin:		INPUT	val;
+	function:	LSH;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(in, DATAIN, 1);
+	attribute:	(shift, SHIFT, 0);
+	attribute:	(val, SHIFTVAL, 0);
+}	
+
+Cell	TECH_LSHIFT4 {
+	pin:		INPUT	[3:0]	in;
+	pin:		INPUT	[2:0]	shift;
+	pin:		OUTPUT	[3:0]	out;
+	pin:		INPUT	val;
+	function:	LSH;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(in, DATAIN, 1);
+	attribute:	(shift, SHIFT, 0);
+	attribute:	(val, SHIFTVAL, 0);
+}	
+
+Cell	TECH_LSHIFT8 {
+	pin:		INPUT	[7:0]	in;
+	pin:		INPUT	[3:0]	shift;
+	pin:		OUTPUT	[7:0]	out;
+	pin:		INPUT	val;
+	function:	LSH;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(in, DATAIN, 1);
+	attribute:	(shift, SHIFT, 0);
+	attribute:	(val, SHIFTVAL, 0);
+}	
+
+Cell	TECH_LSHIFT16 {
+	pin:		INPUT	[15:0]	in;
+	pin:		INPUT	[4:0]	shift;
+	pin:		OUTPUT	[15:0]	out;
+	pin:		INPUT	val;
+	function:	LSH;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(in, DATAIN, 1);
+	attribute:	(shift, SHIFT, 0);
+	attribute:	(val, SHIFTVAL, 0);
+}	
+Cell	TECH_LSHIFT32 {
+	pin:		INPUT	[31:0]	in;
+	pin:		INPUT	[5:0]	shift;
+	pin:		OUTPUT	[31:0]	out;
+	pin:		INPUT	val;
+	function:	LSH;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(in, DATAIN, 1);
+	attribute:	(shift, SHIFT, 0);
+	attribute:	(val, SHIFTVAL, 0);
+}	
+
+Cell	TECH_LSHIFT64 {
+	pin:		INPUT	[63:0]	in;
+	pin:		INPUT	[6:0]	shift;
+	pin:		OUTPUT	[63:0]	out;
+	pin:		INPUT	val;
+	function:	LSH;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(in, DATAIN, 1);
+	attribute:	(shift, SHIFT, 0);
+	attribute:	(val, SHIFTVAL, 0);
+}	
+
+Cell	TECH_RSHIFT1 {
+	pin:		INPUT	in;
+	pin:		INPUT	shift;
+	pin:		OUTPUT	out;
+	pin:		INPUT	val;
+	function:	RSH;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(in, DATAIN, 1);
+	attribute:	(shift, SHIFT, 0);
+	attribute:	(val, SHIFTVAL, 0);
+}	
+Cell	TECH_RSHIFT2 {
+	pin:		INPUT	[1:0]	in;
+	pin:		INPUT	[1:0]	shift;
+	pin:		OUTPUT	[1:0]	out;
+	pin:		INPUT	val;
+	function:	RSH;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(in, DATAIN, 1);
+	attribute:	(shift, SHIFT, 0);
+	attribute:	(val, SHIFTVAL, 0);
+}	
+
+Cell	TECH_RSHIFT4 {
+	pin:		INPUT	[3:0]	in;
+	pin:		INPUT	[2:0]	shift;
+	pin:		OUTPUT	[3:0]	out;
+	pin:		INPUT	val;
+	function:	RSH;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(in, DATAIN, 1);
+	attribute:	(shift, SHIFT, 0);
+	attribute:	(val, SHIFTVAL, 0);
+}	
+
+Cell	TECH_RSHIFT8 {
+	pin:		INPUT	[7:0]	in;
+	pin:		INPUT	[3:0]	shift;
+	pin:		OUTPUT	[7:0]	out;
+	pin:		INPUT	val;
+	function:	RSH;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(in, DATAIN, 1);
+	attribute:	(shift, SHIFT, 0);
+	attribute:	(val, SHIFTVAL, 0);
+}	
+
+Cell	TECH_RSHIFT16 {
+	pin:		INPUT	[15:0]	in;
+	pin:		INPUT	[4:0]	shift;
+	pin:		OUTPUT	[15:0]	out;
+	pin:		INPUT	val;
+	function:	RSH;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(in, DATAIN, 1);
+	attribute:	(shift, SHIFT, 0);
+	attribute:	(val, SHIFTVAL, 0);
+}	
+Cell	TECH_RSHIFT32 {
+	pin:		INPUT	[31:0]	in;
+	pin:		INPUT	[5:0]	shift;
+	pin:		OUTPUT	[31:0]	out;
+	pin:		INPUT	val;
+	function:	RSH;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(in, DATAIN, 1);
+	attribute:	(shift, SHIFT, 0);
+	attribute:	(val, SHIFTVAL, 0);
+}	
+
+Cell	TECH_RSHIFT64 {
+	pin:		INPUT	[63:0]	in;
+	pin:		INPUT	[6:0]	shift;
+	pin:		OUTPUT	[63:0]	out;
+	pin:		INPUT	val;
+	function:	RSH;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(in, DATAIN, 1);
+	attribute:	(shift, SHIFT, 0);
+	attribute:	(val, SHIFTVAL, 0);
+}
+
+Cell	TECH_CMP1 {
+	pin:		INPUT	in1;
+	pin:		INPUT	in2;
+	pin:		OUTPUT	equal;
+	pin:		OUTPUT	unequal;
+	pin:		OUTPUT	greater;
+	pin:		OUTPUT	lesser;
+	function:	CMP;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(equal, EQ, 1);
+	attribute:	(unequal, UEQ, 1);
+	attribute:	(greater, GT, 1);
+	attribute:	(lesser, LT, 1);
+}	
+
+Cell	TECH_CMP2 {
+	pin:		INPUT	[1:0]	in1;
+	pin:		INPUT	[1:0]	in2;
+	pin:		OUTPUT	equal;
+	pin:		OUTPUT	unequal;
+	pin:		OUTPUT	greater;
+	pin:		OUTPUT	lesser;
+	function:	CMP;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(equal, EQ, 1);
+	attribute:	(unequal, UEQ, 1);
+	attribute:	(greater, GT, 1);
+	attribute:	(lesser, LT, 1);
+}	
+Cell	TECH_CMP4 {
+	pin:		INPUT	[3:0]	in1;
+	pin:		INPUT	[3:0]	in2;
+	pin:		OUTPUT	equal;
+	pin:		OUTPUT	unequal;
+	pin:		OUTPUT	greater;
+	pin:		OUTPUT	lesser;
+	function:	CMP;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(equal, EQ, 1);
+	attribute:	(unequal, UEQ, 1);
+	attribute:	(greater, GT, 1);
+	attribute:	(lesser, LT, 1);
+}	
+Cell	TECH_CMP8 {
+	pin:		INPUT	[7:0]	in1;
+	pin:		INPUT	[7:0]	in2;
+	pin:		OUTPUT	equal;
+	pin:		OUTPUT	unequal;
+	pin:		OUTPUT	greater;
+	pin:		OUTPUT	lesser;
+	function:	CMP;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(equal, EQ, 1);
+	attribute:	(unequal, UEQ, 1);
+	attribute:	(greater, GT, 1);
+	attribute:	(lesser, LT, 1);
+}	
+Cell	TECH_CMP8 {
+	pin:		INPUT	[7:0]	in1;
+	pin:		INPUT	[7:0]	in2;
+	pin:		OUTPUT	equal;
+	pin:		OUTPUT	unequal;
+	pin:		OUTPUT	greater;
+	pin:		OUTPUT	lesser;
+	function:	CMP;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(equal, EQ, 1);
+	attribute:	(unequal, UEQ, 1);
+	attribute:	(greater, GT, 1);
+	attribute:	(lesser, LT, 1);
+}	
+Cell	TECH_CMP16 {
+	pin:		INPUT	[15:0]	in1;
+	pin:		INPUT	[15:0]	in2;
+	pin:		OUTPUT	equal;
+	pin:		OUTPUT	unequal;
+	pin:		OUTPUT	greater;
+	pin:		OUTPUT	lesser;
+	function:	CMP;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(equal, EQ, 1);
+	attribute:	(unequal, UEQ, 1);
+	attribute:	(greater, GT, 1);
+	attribute:	(lesser, LT, 1);
+}	
+Cell	TECH_CMP32 {
+	pin:		INPUT	[31:0]	in1;
+	pin:		INPUT	[31:0]	in2;
+	pin:		OUTPUT	equal;
+	pin:		OUTPUT	unequal;
+	pin:		OUTPUT	greater;
+	pin:		OUTPUT	lesser;
+	function:	CMP;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(equal, EQ, 1);
+	attribute:	(unequal, UEQ, 1);
+	attribute:	(greater, GT, 1);
+	attribute:	(lesser, LT, 1);
+}	
+
+Cell	TECH_CMP64 {
+	pin:		INPUT	[63:0]	in1;
+	pin:		INPUT	[63:0]	in2;
+	pin:		OUTPUT	equal;
+	pin:		OUTPUT	unequal;
+	pin:		OUTPUT	greater;
+	pin:		OUTPUT	lesser;
+	function:	CMP;
+	attribute:	(equal, EQ, 1);
+	attribute:	(unequal, UEQ, 1);
+	attribute:	(greater, GT, 1);
+	attribute:	(lesser, LT, 1);
+}	
+Cell	TECH_VCC {
+	pin:	OUTPUT	out;
+	function:	VCC;
+	area:		1.0;
+	delay:		1.0;
+}
+
+Cell	TECH_GND {
+	pin:	OUTPUT out;
+	function:	GND;
+	area:		1.0;
+	delay:		1.0;
+}	
+
+Cell	TECH_INC1 {
+	pin:	INPUT in;
+	pin:	OUTPUT [1:0] out;
+	function:	INC;
+	area:		1.0;
+	delay:		1.0;
+}	
+
+Cell	TECH_INC2 {
+	pin:	INPUT [1:0] in;
+	pin:	OUTPUT [2:0] out;
+	function:	INC;
+	area:		2.0;
+	delay:		1.0;
+}	
+Cell	TECH_INC4 {
+	pin:	INPUT [3:0] in;
+	pin:	OUTPUT [4:0] out;
+	function:	INC;
+	area:		4.0;
+	delay:		1.0;
+}	
+Cell	TECH_INC8 {
+	pin:	INPUT [7:0] in;
+	pin:	OUTPUT [8:0] out;
+	function:	INC;
+	area:		8.0;
+	delay:		1.0;
+}	
+
+Cell	TECH_INC16 {
+	pin:	INPUT [15:0] in;
+	pin:	OUTPUT [16:0] out;
+	function:	INC;
+	area:		16.0;
+	delay:		1.0;
+}	
+Cell	TECH_INC32 {
+	pin:	INPUT [31:0] in;
+	pin:	OUTPUT [32:0] out;
+	function:	INC;
+	area:		32.0;
+	delay:		1.0;
+}	
+
+Cell	TECH_INC64 {
+	pin:	INPUT [63:0] in;
+	pin:	OUTPUT [64:0] out;
+	function:	INC;
+	area:		64.0;
+	delay:		1.0;
+}	

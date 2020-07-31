@@ -1,0 +1,20 @@
+[PARSE_INFO 1]: Reading design file test.v .....
+[PARSE_INFO 2]: Analyzing module test .....
+[PARSE_INFO 3]: Done reading source file test.v. 
+[PARSE_INFO 4]: Starting elaboration of design .....
+[PARSE_INFO 5]: Eaboration done.
+[PARSE_INFO 6]: Successfully parsed the design.
+[SYNTH_INFO 1]: Doing synthesizability check .....
+[SYNTH_WARN 19]: Line 10 all variables read in the block are not specified in the sensitivity list.
+[SYNTH_INFO 15]: Synthesizing module test ........... 
+[SYNTH_INFO 16]: Done. 
+[SYNTH_INFO 500]: Synthesis completed with 0 error(s) and 1 warning(s).
+
+=================================================================
+                         AREA REPORT
+=================================================================
+Cell                Type                Count               Area                
+=================================================================
+=================================================================
+Total               -                   0                   0
+

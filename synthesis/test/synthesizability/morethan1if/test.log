@@ -1,0 +1,22 @@
+[PARSE_INFO 1]: Reading design file test.v .....
+[PARSE_INFO 2]: Analyzing module test .....
+[PARSE_INFO 3]: Done reading source file test.v. 
+[PARSE_INFO 4]: Starting elaboration of design .....
+[PARSE_INFO 5]: Eaboration done.
+[PARSE_INFO 6]: Successfully parsed the design.
+[SYNTH_INFO 1]: Doing synthesizability check .....
+[SYNTH_ERROR 11]: Line 7 module test is not synthesizable, the sensitivity list contains complex expression, only primary expressions and bit select are allowed.
+[SYNTH_INFO 40]: Started mapping to generic gates.....
+[SYNTH_INFO 41]: Generic mapping done.
+[SYNTH_INFO 38]: Starting level 1 netlist optimization...
+[SYNTH_INFO 39]: Level 1 netlist optimization done.
+[SYNTH_INFO 500]: Synthesis completed with 1 error(s) and 0 warning(s).
+
+=================================================================
+                         AREA REPORT
+=================================================================
+Cell                Type                Count               Area                
+=================================================================
+=================================================================
+Total               -                   0                   0
+

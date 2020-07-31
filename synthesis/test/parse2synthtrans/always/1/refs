@@ -1,0 +1,4 @@
+# First test case in regression.
+CMD=hana
+OPTIONS=test.v  -l test.log 
+FILES=gold.log test.log

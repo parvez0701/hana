@@ -1,0 +1,56 @@
+module test(en, in, out);
+
+input wire en;
+input wire [1:0]in;
+output reg [2:0]out;
+wire synth_net;
+wire synth_net_0;
+wire synth_net_1;
+wire synth_net_2;
+wire synth_net_3;
+wire synth_net_4;
+wire synth_net_5;
+wire synth_net_6;
+wire synth_net_7;
+wire synth_net_9;
+wire synth_net_11;
+wire synth_net_13;
+wire synth_net_14;
+wire synth_net_15;
+wire synth_net_16;
+wire synth_net_17;
+wire synth_net_18;
+wire synth_net_19;
+wire synth_net_20;
+wire synth_net_21;
+wire synth_net_22;
+wire synth_net_23;
+wire synth_net_24;
+wire synth_net_25;
+GND_0_1 synth_GND(.OUT(synth_net));
+GND_0_1 synth_GND_0(.OUT(synth_net_0));
+GND_0_1 synth_GND_1(.OUT(synth_net_1));
+VCC_0_1 synth_VCC(.OUT(synth_net_2));
+GND_0_1 synth_GND_2(.OUT(synth_net_3));
+ADD_3_3 synth_ADD(.COUT(synth_net_4), .C({synth_net_5, synth_net_6, synth_net_7}
+    ), .A({synth_net, in[1], in[0]}), .B({synth_net_0, synth_net_1, synth_net_2}
+    ), .CIN(synth_net_3));
+VCC_0_1 synth_VCC_0(.OUT(synth_net_9));
+VCC_0_1 synth_VCC_1(.OUT(synth_net_11));
+VCC_0_1 synth_VCC_2(.OUT(synth_net_13));
+AND_2_1 synth_AND(.OUT(synth_net_14), .IN({synth_net_8, synth_net_9}));
+AND_2_1 synth_AND_0(.OUT(synth_net_15), .IN({synth_net_10, synth_net_11}));
+AND_2_1 synth_AND_1(.OUT(synth_net_16), .IN({synth_net_12, synth_net_13}));
+AND_2_1 synth_AND_2(.OUT(synth_net_17), .IN({synth_net_14, en}));
+AND_2_1 synth_AND_3(.OUT(synth_net_18), .IN({en, synth_net_9}));
+AND_2_1 synth_AND_4(.OUT(synth_net_19), .IN({synth_net_15, en}));
+AND_2_1 synth_AND_5(.OUT(synth_net_20), .IN({en, synth_net_11}));
+AND_2_1 synth_AND_6(.OUT(synth_net_21), .IN({synth_net_16, en}));
+AND_2_1 synth_AND_7(.OUT(synth_net_22), .IN({en, synth_net_13}));
+AND_2_1 synth_AND_8(.OUT(synth_net_23), .IN({synth_net_17, synth_net_18}));
+LD_1_1 synth_LD(.Q(out[2]), .D(synth_net_23), .EN(synth_net_18));
+AND_2_1 synth_AND_9(.OUT(synth_net_24), .IN({synth_net_19, synth_net_20}));
+LD_1_1 synth_LD_0(.Q(out[1]), .D(synth_net_24), .EN(synth_net_20));
+AND_2_1 synth_AND_10(.OUT(synth_net_25), .IN({synth_net_21, synth_net_22}));
+LD_1_1 synth_LD_1(.Q(out[0]), .D(synth_net_25), .EN(synth_net_22));
+endmodule

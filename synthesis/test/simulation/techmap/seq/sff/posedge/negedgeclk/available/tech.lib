@@ -1,0 +1,16 @@
+Library: 	GenericLib
+Author:		Parvez Ahmad
+Version:	1.0
+
+
+Cell	TECH_SFF {
+	pin:		INPUT	 d;
+	pin:		INPUT	 clk;
+	pin:		INPUT	 set;
+	pin:		OUTPUT	 q;
+	function:	SFF;
+	area:		3.0;
+	delay:		3.0;
+	attribute:	(clk, CLOCK, 0);
+	attribute:	(set, SET, 1);
+}

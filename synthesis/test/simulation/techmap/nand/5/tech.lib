@@ -1,0 +1,34 @@
+Library: 	GenericLib
+Author:		Parvez Ahmad
+Version:	1.0
+
+
+Cell	TECH_NAND2 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[1:0] in;
+	function:	NAND;
+	area:		2.0;
+	delay:		2.0;
+}
+
+Cell	TECH_NAND3 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[2:0] in;
+	function:	NAND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NAND4 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[3:0] in;
+	function:	NAND;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NAND5 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[4:0] in;
+	function:	NAND;
+	area:		3.0;
+	delay:		3.0;
+}

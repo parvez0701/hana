@@ -1,0 +1,14 @@
+Library: 	GenericLib
+Author:		Parvez Ahmad
+Version:	1.0
+
+Cell	TECH_FF {
+	pin:		INPUT	 d;
+	pin:		INPUT	 clk;
+	pin:		OUTPUT	 q;
+	function:	FF;
+	area:		2.0;
+	delay:		2.0;
+	attribute:	(clk, CLOCK, 1);
+}	
+

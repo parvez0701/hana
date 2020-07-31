@@ -1,0 +1,17 @@
+Library: 	GenericLib
+Author:		Parvez Ahmad
+Version:	1.0
+
+Cell	TECH_ADD2 {
+	pin:		INPUT	 [1:0] in1;
+	pin:		INPUT	 [1:0] in2;
+	pin:		INPUT	 cin;
+	pin:		OUTPUT	 cout;
+	pin:		OUTPUT	 [1:0] out;
+	function:	ADD;
+	area:		5.0;
+	delay:		5.0;
+	attribute:	(cin, CIN, 1);
+	attribute:	(cout, COUT, 1);
+}
+

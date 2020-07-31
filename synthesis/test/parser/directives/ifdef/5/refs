@@ -1,0 +1,5 @@
+# First test case in regression.
+CMD=bulah
+OPTIONS=test.v -d test_dec.v -log test.log 
+FILES=test_gold.v test_dec.v
+FILES=gold.log test.log

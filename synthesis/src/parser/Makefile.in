@@ -1,0 +1,18 @@
+###################INITIAL MAKEFILE INCLDE#############################
+#AUTHOR	:	Parvez Ahmad
+#DATE	:	22-Feb-2009
+#######################################################################
+
+CC 			:= /usr/bin/gcc
+CPPFLAGS	:= -g -c -Wall
+PARSERLIB   := ../../lib/libparser.a
+LIBS		:= -lm -lstdc++ $(PARSERLIB) -lm
+EXE			:= ../../bin/bulah
+LEX			:= /usr/local/bin/flex
+YACC		:= /usr/local/bin/bison
+AR          := /usr/bin/ar
+
+SRCS		:=  $(shell ls *.cpp)
+OBJS		:= $(patsubst %.cpp, %.o , $(SRCS))
+SRCS		:= lex.yy.cc parser.tab.cc $(SRCS)
+OBJS		:= lex.yy.o parser.tab.o $(OBJS) 

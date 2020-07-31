@@ -1,0 +1,132 @@
+Library: 	GenericLib
+Author:		Parvez Ahmad
+Version:	1.0
+
+
+Cell	TECH_NOR2 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[1:0] in;
+	function:	NOR;
+	area:		2.0;
+	delay:		2.0;
+}
+
+Cell	TECH_NOR3 {
+	pin:		OUTPUT	out;
+	pin:		INPUT	[2:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NOR4 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[3:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NOR5 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[4:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NOR6 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[5:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NOR7 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[6:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NOR8 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[7:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NOR9 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[8:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NOR10 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[9:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NOR11 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[10:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NOR12 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[11:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NOR13 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[12:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NOR14 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[13:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NOR15 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[14:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NOR16 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[15:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NOR17 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[16:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NOR18 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[17:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}
+Cell	TECH_NOR19 {
+	pin:		OUTPUT	 out;
+	pin:		INPUT	[18:0] in;
+	function:	NOR;
+	area:		3.0;
+	delay:		3.0;
+}

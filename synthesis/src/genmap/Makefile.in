@@ -1,0 +1,12 @@
+#Author: Parvez Ahmad
+CC				:= /usr/bin/gcc
+CPPFLAGS		:= -g -c
+PWD				:= $(shell pwd)
+INCLUDE       	:= -I./ -I../../include/ -I$(PWD)/../synthds \
+						-I$(PWD)/../synthparse -I$(PWD)/../rtl2synth \
+						-I$(PWD)/../utils -I$(PWD)/../cells \
+						-I$(PWD)/../structview 
+SRCS			:=  $(shell ls *.cpp)
+OBJS			:= $(patsubst %.cpp, %.o , $(SRCS))
+
+

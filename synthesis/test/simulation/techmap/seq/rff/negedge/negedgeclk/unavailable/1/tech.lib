@@ -1,0 +1,16 @@
+Library: 	GenericLib
+Author:		Parvez Ahmad
+Version:	1.0
+
+
+Cell	TECH_RFF {
+	pin:		INPUT	 d;
+	pin:		INPUT	 clk;
+	pin:		INPUT	 reset;
+	pin:		OUTPUT	 q;
+	function:	RFF;
+	area:		3.0;
+	delay:		3.0;
+	attribute:	(clk, CLOCK, 1);
+	attribute:	(reset, RESET, 1);
+}

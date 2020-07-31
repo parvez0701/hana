@@ -1,0 +1,55 @@
+#Author: Parvez Ahmad
+#Start Date: 13/05/2009
+CC            	 := /usr/bin/gcc
+CPPFLAGS      	 := -g -c -Wall
+SYNTHLIB      	 := ../lib/libsynth.a
+LIBS          	 := -lstdc++ -lm ../lib/libparser.a $(SYNTHLIB) -lm
+EXE           	 := ../bin/hana
+AR            	 := /usr/bin/ar
+PWD				 := $(shell pwd)
+SRCDIRS			 := 	parser \
+						synthds \
+						synthparse \
+						utils \
+						behavopt \
+						cells \
+						rtl2synth \
+						structview \
+						netopt \
+						genmap \
+						techmap \
+						sop
+INCLUDE       	 := 	-I./ \
+						-I../include/ \
+						-I $(PWD)/parser \
+						-I$(PWD)/synthds \
+                    	-I$(PWD)/synthparse  \
+						-I$(PWD)/utils \
+						-I$(PWD)/behavopt \
+						-I$(PWD)/rtl2synth \
+						-I$(PWD)/cells \
+						-I$(PWD)/structview \
+						-I$(PWD)/netopt \
+						-I$(PWD)/genmap \
+						-I$(PWD)/techmap \
+						-I$(PWD)/sop
+SRCS			 :=  	$(shell ls *.cpp) \
+						$(shell ls synthds/*.cpp) \
+						$(shell ls synthparse/*.cpp) \
+						$(shell ls utils/*.cpp) \
+						$(shell ls behavopt/*.cpp) \
+						$(shell ls cells/*.cpp) \
+						$(shell ls rtl2synth/*.cpp) \
+						$(shell ls structview/*.cpp) \
+						$(shell ls netopt/*.cpp) \
+						$(shell ls genmap/*.cpp) \
+						$(shell ls techmap/*.cpp) \
+						$(shell ls sop/*.cpp)
+OBJS			 := $(patsubst %.cpp, %.o , $(SRCS))
+LEXOBJS			 :=	structview/cellliblex.yy.o  
+PARSEOBJS		 := structview/celllib.tab.o  
+
+export $(INCLUDE)
+
+
+
